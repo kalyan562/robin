@@ -1,0 +1,24 @@
+mport java.io.*;
+public class Multiply
+{
+  public int width;
+  public int height;
+  public int length;
+  public static void main(String args[]){
+  try{
+  Multiply mul= new Multiply();
+  int val;
+  BufferedReader object=new BufferedReader(new InputStreamReader(System.in));
+  System.out.println("Enter number:"+" ");
+  mul.width=Integer.parseInt(object.readLine());
+  mul.height=Integer.parseInt(object.readLine());
+  mul.length=Integer.parseInt(object.readLine());
+  System.out.println("Width is ="+ mul.width);
+  System.out.println("Height is ="+ mul.height);
+  System.out.println("Lenght is ="+ mul.length);
+  val= mul.width*mul.height*mul.length;
+  System.out.print("Multiply number is="+ val);
+  }
+  catch(Exception e){}
+  }
+}
